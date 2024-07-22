@@ -19,7 +19,7 @@ const pageURL = 'http://www.ya.ru';
 const outputFileName = 'www-ya-ru.html';
 const outputFilePath = (outputPath) => path.join(outputPath, outputFileName);
 
-let sandbox = {};
+const sandbox = {};
 
 beforeAll(async () => {
   sandbox.responseData = await fs.readFile(

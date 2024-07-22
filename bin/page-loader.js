@@ -16,12 +16,12 @@ program
 
 program
   .parseAsync(process.argv)
-  .then((program) => {
-    const outputPath = program.opts().output;
-    const url = program.args[0];
+  .then((command) => {
+    const outputPath = command.opts().output;
+    const url = command.args[0];
 
     loadPage(url)
-      .then((siteData) => savePage( outputPath, url, siteData))
+      .then((siteData) => savePage(outputPath, url, siteData))
       .then(() => {
         const outputFilePath = getOutputFilePath(outputPath, url);
         console.log(`Page was successfully downloaded into ${outputFilePath}`);

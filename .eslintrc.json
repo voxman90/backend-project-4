@@ -2,7 +2,8 @@
   "root": true,
   "env": {
       "node": true,
-      "es2021": true
+      "es2021": true,
+      "jest/globals": true
   },
   "extends": [
       "airbnb-base"
@@ -11,8 +12,10 @@
       "ecmaVersion": 12,
       "sourceType": "module"
   },
+  "plugins": ["jest"],
   "rules": {
       "no-console": 0,
+      "linebreak-style": 0,
       "import/extensions": 0,
       "no-underscore-dangle": [2, { "allow": ["__filename", "__dirname"] }]
   }
