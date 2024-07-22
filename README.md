@@ -1,2 +1,18 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/voxman90/backend-project-4/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/voxman90/backend-project-4/actions)
+
+# page-loader
+Page loader utility
+
+## Usage
+
+```shell
+$ page-loader -h
+Usage: page-loader [options] <url>
+
+Page loader utility
+
+Options:
+  -V, --version      output the version number
+  -o --output [dir]  output dir (default: "/home/user/current-dir")
+  -h, --help         display help for command
+```
